@@ -218,3 +218,7 @@ button {
   border-radius: 5px;
   background-color: green;
 }
+
+.component {
+  width: 100%;
+}
