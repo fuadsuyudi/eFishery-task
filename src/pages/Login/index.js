@@ -8,8 +8,8 @@ class Login extends Component {
         email: ''
     }
 
-    submit = async (event) => {
-        event.preventDefault();
+    submit = async (e) => {
+        e.preventDefault();
 
         if (!this.state.email) {
             alert('Email tidak boleh kosong!');
@@ -31,9 +31,9 @@ class Login extends Component {
         window.location.reload();
     }
 
-    setEmail = (event) => {
+    setEmail = (e) => {
         this.setState({
-            email: (event.target.value || '').trim(),
+            email: (e.target.value || '').trim(),
         });
     }
 
