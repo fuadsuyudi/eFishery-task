@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import userStore from './store/user';
 import todosStore from './store/todos';
 
@@ -7,12 +7,19 @@ import Login from './pages/Login';
 
 import './App.css';
 
-class App extends Component {
+class BaseComponent extends React.PureComponent {
+	rerender = () => {
+		this.setState({
+			_rerender: new Date(),
+		});
+	}
+}
+class App extends BaseComponent {
 	state = {
 		isInitialized: false,
 	}
 
-	render() {
+	render = () => {
 		if (!this.state.isInitialized) {
 			return null;
 		}
@@ -36,10 +43,10 @@ class App extends Component {
 
 	async componentDidUpdate() {
 		if (userStore.data.email && !todosStore.isInitialized) {
-			
+
 			todosStore.setName(userStore.data.id);
 			await todosStore.initialize();
-			
+
 		}
 	}
 }

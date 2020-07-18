@@ -157,3 +157,7 @@ button {
     margin-left: 72px;
   }
 }
+
+.mr-1 {
+  margin-right: 10px;
+}

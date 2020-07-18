@@ -33,7 +33,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "karma": "^5.1.0"
-  }
+  "devDependencies": {}
 }

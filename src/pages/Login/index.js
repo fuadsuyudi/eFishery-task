@@ -27,6 +27,8 @@ class Login extends Component {
             id,
             email: this.state.email,
         });
+
+        window.location.reload();
     }
 
     setEmail = (event) => {
