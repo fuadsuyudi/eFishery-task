@@ -72,9 +72,9 @@ class List extends BaseComponent {
                                 <div className="spacer"></div>
 
                                 <div>
-                                    {(todo.status && todo.status != 'todo') ? <span onClick={() => this.setTodo(todo)} className="todo pointer">mark todo</span> : ''}
-                                    {(todo.status && todo.status != 'progress') ? <span onClick={() => this.setProgress(todo)} className="progress pointer">mark progress</span> : ''}
-                                    {(todo.status && todo.status != 'done') ? <span onClick={() => this.setDone(todo)} className="done pointer">mark done</span> : ''}
+                                    {(todo.status && todo.status !== 'todo') ? <span onClick={() => this.setTodo(todo)} className="todo pointer">mark todo</span> : ''}
+                                    {(todo.status && todo.status !== 'progress') ? <span onClick={() => this.setProgress(todo)} className="progress pointer">mark progress</span> : ''}
+                                    {(todo.status && todo.status !== 'done') ? <span onClick={() => this.setDone(todo)} className="done pointer">mark done</span> : ''}
                                     <span onClick={() => this.setDelete(todo)} className="delete pointer">x delete</span>
                                 </div>
 
