@@ -199,6 +199,7 @@ button {
   color: white;
   font-size: 11px;
   padding: 2px 4px;
+  margin: 0 5px;
   border-radius: 5px;
   background-color:grey;
 }
@@ -207,6 +208,7 @@ button {
   color: white;
   font-size: 11px;
   padding: 2px 4px;
+  margin: 0 5px;
   border-radius: 5px;
   background-color: coral;
 }
@@ -215,10 +217,24 @@ button {
   color: white;
   font-size: 11px;
   padding: 2px 4px;
+  margin: 0 5px;
   border-radius: 5px;
   background-color: green;
 }
 
+.delete {
+  color: white;
+  font-size: 11px;
+  padding: 2px 4px;
+  margin: 0 5px;
+  border-radius: 5px;
+  background-color: red;
+}
+
 .component {
   width: 100%;
+}
+
+.pointer {
+  cursor: pointer;
 }
